@@ -1,0 +1,63 @@
+<html>
+  <head>
+  <style>
+ body {
+    background-color: #A9F5E1;
+     }
+  h1 {
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+      }
+	   h2 {
+    border-bottom: 3px solid purple;
+    color: #pink;
+    font-size: 30px;
+      }
+ </style>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     </head>
+	   <body>
+	    <h1>Loading the team list</h1>
+		<div><script src="http://h2.flashvortex.com/display.php?id=2_1427935129_56713_305_0_405_53_8_2_119" type="text/javascript"></script></div>
+		  <div id="t_data">
+          </div>		  
+		   <button id="getData">Click</button>
+		   <script type="application/javascript">
+		   $(document).ready(function(){
+		      $("#getData").on('click',loadJson)
+			  });
+		function loadJson()
+		 {
+			  var url = "http://mythrisofttech.com/Assignments/Anvesh/Data.json";
+			  jQuery.ajax({
+			     url:url,
+                 type:'GET',
+				 contentType:'application/json',
+				 dataType:"json",
+			     success:function(data){
+				 var i=0,len=data.Team_Desc.length,markUp = "";
+				 for(i; i< len; i++)
+				    {
+					var team_id = data.Team_Desc[i].Team_id;
+					var team_name = data.Team_Desc[i].Team_name;
+					var team_count = data.Team_Desc[i].Team_Count;
+					var trainers = data.Team_Desc[i].Trainers;
+					var team_list = data.Team_Desc[i].Team_List;
+				    var head = $("<h2>");
+					head.html("Team id-"+team_id+"<br>Team Name-"+team_name+"<br>TeamCount-"+team_count+"<br>Trainers-"+trainers+"<br>TeamList-"+team_list);
+					$("#t_data").append(head);
+					}
+					
+
+				},
+			 error:function(data){
+				  alert('error');
+				}
+		});
+		
+		} 
+			</script>
+		</body>
+	</html>	
+			  

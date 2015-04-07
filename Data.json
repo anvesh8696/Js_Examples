@@ -1,0 +1,47 @@
+{
+	"company": "International cricket council",
+	"Teams": 5,
+	"Team_Desc": [
+		{
+			"Team_id": 1,
+			"Team_name": "India",
+			"Team_Count": "16",
+			"Trainers": ["Viswa", "dhoni"],
+			"Team_List": ["anvesh", "mithra", "harsha", "mahesh", "ranjith", "kranthi"]
+		},
+		{
+			
+			"Team_id": 2,
+			"Team_name": "Australia",
+			"Team_Count": "18",
+			"Trainers": ["pointing", "praveen"],
+			"Team_List": ["anudeep", "anirudh", "bro", "shashank", "sudheer", "charan"]
+		},
+		{
+			
+			"Team_id": 3,
+			"Team_name": "New Zealand",
+			"Team_Count": "15",
+			"Trainers": ["Mcullum", "vettori"],
+			"Team_List": ["boult", "anderson", "guptill", "pranav", "shiva", "phani"]
+		},
+		{
+			
+			"Team_id": 4,
+			"Team_name": "Pakistan",
+			"Team_Count": "19",
+			"Trainers": ["misbah", "waquar"],
+			"Team_List": ["younis", "akhtar", "malik", "sohail", "akram", "inzammam"]
+		},
+		{
+			
+			"Team_id": 5,
+			"Team_name": "sri lanka",
+			"Team_Count": "19",
+			"Trainers": ["jayasurya", "murali"],
+			"Team_List": ["sangakara", "vaas", "malinga", "dilshan", "kapugedra", "jawardhane"]
+		}
+
+
+	]
+}
